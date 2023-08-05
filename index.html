@@ -60,9 +60,9 @@
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
     <a href="#news" class="w3-bar-item w3-button">News</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-    <a href="#talks" class="w3-bar-item w3-button">Talks</a>
-    <a href="#publications" class="w3-bar-item w3-button">Research</a>
+    <a href="#Internship Experience" class="w3-bar-item w3-button">Internship Experience</a>
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#Publications" class="w3-bar-item w3-button">Publications</a>
     <a href="#service" class="w3-bar-item w3-button">Services</a>
     <a href="#award" class="w3-bar-item w3-button">Awards</a>
   </div>
@@ -99,6 +99,7 @@
         <p class="w3-center">
           <a href="mailto:xuebing1234@gmail.com">Email</a> &nbsp/&nbsp
           <a href="https://scholar.google.com/citations?user=O78dLWMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/bing-xue-047a6880/">LinkedIn</a> 
         </p>
         </tbody></table>
   </div>
@@ -107,88 +108,170 @@
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News 2023</h2>
       <p><li>
+        08/2023,  I will be the session chair for Search and Information Retrieval on Aug 8 at KDD'23.
+          Excited to meet new people there!
+      </li></p>
+      <p><li>
+        07/2023,  I received the Student Travel Award for KDD'23!
+      </li></p>
+      <p><li>
         05/2023,  I will join Amazon Search Science and AI for my summer internship. I will work on multi-task learning with large language models.
       </li></p>
       <p><li>
         05/2023,  I will be a co-principal investigator (Co-PI) on “Cancer FAST Stability Project”, funded by <a href="https://sites.wustl.edu/bigideas/winning-teams/">Big Ideas</a>.
       </li></p>
       <p><li>
-        04/2023, our work on individualized treatment effect estimation is accepted by KDD'23
-        <a href="http://valser.org/2023/#/workshopde?id=11">https://kdd.org/kdd2023/</a>.</li></p>
+        04/2023, our work on individualized treatment effect estimation is accepted by
+        <a href="https://kdd.org/kdd2023/">KDD'23</a>.</li></p>
       <p><li>
         03/2023, 2 papers about machine learning in COVID treatment are accepted by
         <a href="https://academic.oup.com/jamia/article/30/4/656/6964382">JAMIA</a>.
         and
         <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/aor.14542">Artificial Organs</a>.
       </li></p>
+      <p><li>
+        01/2023, our paper about perioperative risk management will appear on
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S1532046422002751">Journal of Biomedical Informatics</a>.
+      </li></p>
+  </div>
 
+<!-- The Employment Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="Internship Experience">
+   <h2>Internship Experience</h2>
+      <p><li>
+        06/2023 - 09/2023,  I am doing my internship at Amazon Search AI. I have been working on Multi-task PreFineTuning
+          for Large Language Models to advance the state-of-the-art in downstream predictions.
+      </li></p>
+      <p><li>
+        09/2022 - 12/2022,  my internship at Meta AI was extended to develop video recommendation systems.
+          We developed a novel video representation system using generative AI. Our results on Instagram Reels
+          and FaceBook Reels are exciting!
+      </li></p>
+      <p><li>
+        06/2022 - 09/2022,  I did my first internship at Meta AI! I joined the Modeling Foundation team to advance the
+          video recommendation systems for Meta's Instagram Reels and FaceBook Reels.
+          I developed a hierarchical video representation algorithm on top of the traditional Two-Tower Models (like TTSN or similar ones).
+          We achieved better results in user-video interaction prediction and video retrieval!
+      </li></p>
   </div>
 <!-- The Projects Section -->
   <div class="w3-container w3-padding-32" id="projects">
     <h2>Recent Projects</h2>
     <p class="w3-justify">
-        Actually, model compression is a kind of technique for developing portable deep neural networks with lower memory and computation costs. I have done several projects in Huawei including some smartphones' applications in 2019 and 2020 (e.g. Mate 30 and Honor V30). Currently, I am leading the AdderNet project, which aims to develop a series of deep learning models using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
+        Most of my projects are focused on generating better latent representations of multi-modal inputs,
+        and inferring factual and counterfactual outcomes from the latent representation.
     </p>
-	
-	<h4><li>The Vanilla Neural Architecture for the 2020s</li></h4>
-        <img style="width:96%;" src="images/VanillaNet.png"> 
+        <h4><li>Large Language Models in Medicine</li></h4>
+<!--        <img style="width:96%;" src="images/AdderNet.jpg"> -->
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/huawei-noah/VanillaNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/abs/2305.12972">Paper</a> | <a style="color: #447ec9" href="https://www.zhihu.com/question/531529633/answer/3047230939">Discussion on Zhihu</a> 
+           <span style="color:red"> Exploit the clinical notes! </span>
+            The processing of open and unstructured clinical notes before and during surgeries is always tedious, as the
+            notes can be arbitrarily long and written in various tenses/formats.
+            We leveraged the recent advances of Large Language Models (LLMs) and developed a foundational language model to read
+            the notes for us! We finetuned the pretrained LLMs with respect to the key aspects during perioperative care,
+            and demonstrated that LLMs can accurately predict postoperative risks from the clinical notes! Our paper is in preparation.
+        </p>
+
+	<h4><li>Individualized Treatment Effect Estimation</li></h4>
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://academic.oup.com/jamia/article/30/4/656/6964382">JAMIA</a> |
+            <a style="color: #447ec9" href="https://onlinelibrary.wiley.com/doi/abs/10.1111/aor.14542">Artificial Organs</a> |
+            <a style="color: #447ec9" href="https://arxiv.org/abs/2307.03315">KDD</a>
         </p>
         <p class="w3-justify">
-        <span style="color:red">VanillaNet is remarkable!</span> The concept was born from embracing the "less is more" philosophy in computer vision. It's elegantly designed by avoiding intricate depth and operations, such as self-attention, making it remarkably powerful yet concise. The 6-layer VanillaNet surpasses ResNet-34, and the 13-layer variant achieves about 83% Top-1 accuracy, outpacing the performance of networks with hundreds of layers, and revealing exceptional hardware efficiency advantages.
-        </p> 
+        <span style="color:red">We could have saved more people!</span>
+            In collaboration with National COVID Cohort Collaborative (N3C) from NIH and
+            International Severe Acute Respiratory and Emerging Infection Consortium (ISARIC) from Oxford University, we investigated
+            COVID-19 patients from 63 countries across 5 continents who were admitted to Intensive Care Units (ICU) during the pandemic.
+            We evaluated the impact of their treatment assignment and responses, and developed several clinical assisting
+            algorithms that could predict the best treatment options by considering both the their factual and counterfactual responses.
+        </p>
 	 
-        <h4><li>Adder Neural Networks</li></h4>
-        <img style="width:96%;" src="images/AdderNet.jpg"> 
+        <h4><li>AI4Science</li></h4>
+<!--        <img style="width:96%;" src="images/AdderNet.jpg"> -->
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
+           <span style="color:red"> We are exploring a brand-new domain </span> - can AI help physicians decode the material properties from their spectral imaging and vice versa?
+            We have developed an innovative optical encoder-decoder architecture that nearly perfectly recover the spectral imaging from crystal responses!
+            We are developing a meta-learning based algorithm that decodes various material properties by reading the spectra.
+            I will work on publishing our results after my internship.
         </p>
-        <p class="w3-justify">
-        I would like to say, <span style="color:red">AdderNet is very cool!</span> The initial idea was came up in about 2017 when climbing with some friends at Beijing. By replacing all convolutional layers (except the first and the last layers), we now can obtain comparable performance on ResNet architectures. In addition, to make the story more complete, we recent release the hardware implementation and some quantization methods. The results are quite encouraging, we can reduce both <strong>the energy consumption and thecircuit areas significantly without affecting the performance</strong>. Now, we are working on more applications to reduce the costs of launching AI algorithms such as low-level vision, detection, and NLP tasks.
-        </p> 
 
-        <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
-        <img style="width:96%;" src="images/GhostNet.png"> 
+        <h4><li>Realtime Sequential Modeling</li></h4>
+        <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S1389945721005943">Sleep Medicine</a>
+        |
+      <a style="color: #447ec9" href="https://www.mdpi.com/1424-8220/22/6/2167">Sensors</a>
+      | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0007091221008709">British Journal of Anaesthesia</a>
+      </p>
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://live.huawei.com/huaweiconnect/meeting/cn/5872.html">Huawei Connect (HC) 2020</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub">MindSpore Hub</a>
+            How to continuously update our beliefs with the inflow of new measurements/observations?
+            We explored two directions. The first one was to design the statistical features that quantified the discrminant patterns
+            in the time series. We have demonstrated that this solution was particularly suitable for wearale devices in first two papers.
+            The second one was to update our posterior distributions as new observations flowed in. We have demonstrated
+            its superior performance on complex multi-modal datasets.
         </p>
-        <p class="w3-justify">
-        The initial verison of GhostNet was accepted by CVPR 2020, which achieved SOTA performance on ImageNet: <span style="color:red">75.7%</span> top1 acc with only <span style="color:red">226M FLOPS</span>. In the current version, we release a series computer vision models (e.g. int8 quantization, detection, and larger networks) on <strong>MindsSpore 1.0</strong> and <strong>Mate 30 Pro (Kirin 990)</strong>.
-        </p> 
 
-        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
-        <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.gif">
+        <h4><li>Representation Learning in Healthcare</li></h4>
+        <a style="color: #447ec9" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2777894">JAMA</a>
+        |
+      <a style="color: #447ec9" href="https://dl.acm.org/doi/pdf/10.1145/3534678.3539190">KDD</a>
+      | <a style="color: #447ec9" href="https://arxiv.org/pdf/2210.04417">ICDM</a>
+      </p>
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
+            When learning from Electronic Health Records, we face 3 challenges:
+            <h9><li>How to learn from hundreds, even thousands of input features? </li></h9>
+            <h9><li>How to deal with partial observations where each patient only has a small subset of input features available? </li></h9>
+            <h9><li>How to model the rare postoperative complications? </li></h9>
+      We first examined the feature redundancy and data imbalance in the real clinical datasets,
+      and evaluated various imputation stategies to deal with missingness (JAMA). After that,
+      we developed a representation learning framework using Generative AI to model the input complexity
+      and uncover its nonlinear relationship with the postoperative risks (KDD).
+      To build clinical trust, we developed an explainable sequential model to identify the key events that cause risk elevation (ICDM).
+      <br>
         </p>
-        <p class="w3-justify">
-        This project aims to develop a video style transfer system on the <strong>Huawei Atlas 200 DK AI developer Kit</strong>. The latency of the original model for processing one image is about <span style="color:red">630ms</span>. After accelerating it using our method, the lantency now is about <span style="color:red">40ms</span>. 
-        </p>  
 
   </div>
 
  <!-- The Publications Section -->
-  <div class="w3-container w3-padding-32"" id="publications">
-    <h2>Research</h2>
-      <p class="w3-left-align" style="line-height:200%">
-        I'm interested in devleoping <strong>efficient models</strong> for computer vision (e.g. classification, detection, and super-resolution) using pruning, quantization, distilaltion, NAS, etc. 
-      </p>
+  <div class="w3-container w3-padding-32"" id="Publications">
+    <h2>Publications</h2>
     <h4> Conference Papers:</h4>
-
     <ol>
-     
-      <!--
       <p>
-      <li><strong>Title</strong>
       <br>
-      Author, <strong>Bing Xue</strong>
+          <strong>Xue, B.,</strong>  Said, A., Xu, Z., Liu, H., Shah, N., Yang, H., Payne, P. and Lu, C., Assisting Clinical Decisions for Scarcely Available Treatment via Disentangled Latent Representation
       <br>
-      <em>NeurIPS</em> 2021 | <a style="color: #447ec9" href="paper link">paper</a> | <a style="color: #447ec9" href="https://github.com/">code</a> | <span style="color:red">Oral Presentation</span> 
+      <em>KDD</em> 2023 | <a style="color: #447ec9"
+                             href="https://arxiv.org/pdf/2307.03315">paper</a>
       </p>
-      -->
+      <p>
+      <br>
+          <strong>Xue, B.,</strong>  Jiao, Y., Kannampallil, T., Fritz, B., King, C., Abraham, J., Avidan, M. and Lu, C., 2022, August. Perioperative predictions with interpretable latent representation
+          <br>
+      <em>KDD</em> 2022 | <a style="color: #447ec9"
+                             href="https://dl.acm.org/doi/pdf/10.1145/3534678.3539190">paper</a>
+      </p>
 
+      <p>
+      <br>
+          Li, D., <strong>Xue, B.,</strong> C., King, Fritz, B., Avidan, M.S., Abraham, J, and Lu C. (2022, Nov). Self-explaining Hierarchical Model for Intraoperative Time Series
+          <br>
+      <em>KDD</em> 2022 | <a style="color: #447ec9"
+                             href="https://arxiv.org/pdf/2210.04417">paper</a>
+      </p>
 
+      <p>
+      <br>
+          Zhang, Z., Xiang, Y., Wu, L., <strong>Xue, B.</strong> and Nehorai, A., 2019. Kergm: Kernelized graph matching          <br>
+      <em>NeurIPS</em> 2019 | <a style="color: #447ec9"
+                             href="https://proceedings.neurips.cc/paper_files/paper/2019/file/cd63a3eec3319fd9c84c942a08316e00-Paper.pdf">paper</a>
+      </p>
+
+        <p>
+      <br>
+        Shi, W., <strong>Xue, B.</strong> Guo, S., Goh, D. Y., and Ser, W. (2018). Obstructive Sleep Apnea Detection Using Difference in Feature and Modified Minimum Distance Classifier.
+            <em>EMBC</em> 2018 | <a style="color: #447ec9"
+                             href="https://ieeexplore.ieee.org/abstract/document/8513093/">paper</a>
+      </p>
 
       </ol>
 
@@ -197,83 +280,112 @@
       <ol>
 
       <p>
-      <li><strong>Neural Architecture Search via Proxy Validation</strong>
       <br>
-      Yanxi Li, Minjing Dong, <strong>Bing Xue</strong>, Chang Xu
-      <br>
-      <em>IEEE TPAMI</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/iel7/34/4359286/09931480.pdf">paper</a>
+          <strong>Xue, B.,</strong>  Shah, N., Xu, Z., Yang, H., Marwali, E., Dalton, H., ... and ISARIC Clin- ical Characterisation Group. (2023). Validation of extracorporeal membrane oxygenation mortality prediction & severity of illness scores in an international COVID‐19 cohort.
+          <br>
+      <em>Artificial Organs</em> 2023 | <a style="color: #447ec9"
+                             href="https://iris.unito.it/bitstream/2318/1904514/1/Artificial%20Organs%20-%202023%20-%20Shah%20-%20Validation%20of%20extracorporeal%20membrane%20oxygenation%20mortality%20prediction%20and%20severity%20of.pdf">paper</a>
       </p>
 
       <p>
-      <li><strong>Local Means Binary Networks for Image Super-Resolution</strong>
       <br>
-      Keyu Li, Nannan Wang, Jingwei Xin, Xinrui Jiang, Jie Li, Xinbo Gao, Kai Han, <strong>Bing Xue</strong>
-      <br>
-      <em>IEEE TNNLS</em> 2022 | <a style="color: #447ec9" href="https://ieeexplore.ieee.org/iel7/5962385/6104215/09927310.pdf">paper</a>
+          <strong>Xue, B.,</strong>  Shah, N., Yang, H., Kannampallil, T., Payne, P. R. O., Lu, C., and Said, A. S. (2022). Multi-horizon predictive models for guiding extracorporeal resource allocation in critically ill COVID-19 patients.
+          <br>
+      <em>JAMIA</em> 2023 | <a style="color: #447ec9"
+                             href="https://academic.oup.com/jamia/article-abstract/30/4/656/6964382">paper</a>
+      </p>
+
+
+      <p>
+      <br>Abraham, J., Bartek, B., Meng, A., King, C. R., <strong>Xue, B.,</strong> Lu, C., and Avidan, M. (2022). Integrating Machine Learning Predictions for Perioperative Risk Management: Towards an Empirical Design of a Flexible-Standardized Risk Assessment Tool.
+          <br>
+      <em>Journal of Biomedical Informatics</em> 2023 | <a style="color: #447ec9"
+                             href="https://www.sciencedirect.com/science/article/abs/pii/S1532046422002751">paper</a>
       </p>
 
       <p>
-      <li><strong>GhostNets on Heterogeneous Devices via Cheap Operations</strong>
       <br>
-      Kai Han, <strong>Bing Xue</strong>, Chang Xu, Jianyuan Guo, Chunjing Xu, Enhua Wu, Qi Tian
-      <br>
-      <em>IJCV</em> 2022 | <a style="color: #447ec9" href="https://link.springer.com/content/pdf/10.1007/s11263-022-01575-y.pdf">paper</a> | <a style="color: #447ec9" href="https://github.com/huawei-noah/Efficient-AI-Backbones">code</a>
+<strong>Xue, B.,</strong> Shi, W., Chotirmall, S., Koh, V., Ang, Y., Tan, X., and Ser, W. (2022). Distance-based detection of cough, wheeze and breath sounds on wearable devices.
+          <br>
+      <em>Sensors</em> 2023 | <a style="color: #447ec9"
+                             href="https://www.mdpi.com/1424-8220/22/6/2167">paper</a>
       </p>
 
+      <p>
+      <br>
+<strong>Xue, B.,</strong> Licis, A., Boyd, J., Hoyt, C. R., and Ju, Y. E. S. (2022). Validation of actigraphy for sleep measurement in children with cerebral palsy.
+          <br>
+      <em>Sleep Medicine</em> 2023 | <a style="color: #447ec9"
+                             href="https://www.sciencedirect.com/science/article/pii/S1389945721005943">paper</a>
+      </p>
 
-
+       <p>
+      <br>
+           Jiao, Y., <strong>Xue, B.,</strong> Lu, C., Avidan, M.S., and Kannampallil, T. (2021). Continu- ous Real-Time Prediction of Surgical Case Duration Using a Modular Artificial Neural Network.
+          <br>
+      <em>British Journal of Anaesthesia</em> 2022 | <a style="color: #447ec9"
+                             href="https://www.sciencedirect.com/science/article/pii/S0007091221008709">paper</a>
+      </p>
+          <p>
+      <br>
+              <strong>Xue, B.,</strong> Li, D., Lu, C., King, C.R., Wildes, T., Avidan, M.S., Kannampallil, T. and Abraham, J., (2021). Use of machine learning to develop and evaluate models using preoperative and intraoperative data to identify risks of postoperative complications.
+          <br>
+      <em>JAMA network open</em> 2022 | <a style="color: #447ec9"
+                             href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2777894">paper</a>
+      </p>
 
       </ol>
-\
 
-    </p>
+
   </div>
 
 <!-- The Services Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="service">
     <h2>Services</h2>
-      <p><li> Area Chair of <a href="https://nips.cc/Conferences/2023/">NeurIPS 2023</a>, <a href="https://icml.cc/Conferences/2023">ICML 2023</a>, <a href="https://nips.cc/Conferences/2022/">NeurIPS 2022</a>, <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p>
-      <p><li> Action Editor of <a href="https://jmlr.org/tmlr/">TMLR (Transactions on Machine Learning Research)</a>.</p>
-      <p><li> Senior Program Committee Members of <a href="https://ijcai-21.org/">IJCAI 2021</a>, <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
-      <p><li> Journal Reviewers of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a>, <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
-      <p><li> Program Committee Members of ICCV 2021, AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
+      <p><li> Session Chair of <a href="https://kdd.org/kdd2023/">KDD 2023</a>, <a href="https://embc.embs.org/2018/">EMBC 2023</a>
+          </p>
+      <p><li> Program Committee Member of NeurIPS 2023, KDD 2023, EMSOFT 2023, AMIA 2023, AAAI 2022, etc.</p>
+      <p><li> Reviewer of Scientific Reports, Journal of Biomedical Informatics, BMC Medical Informatics and Decision Making, etc.</p>
   </div>
 
   <!-- The Awards Section -->
   <div class="w3-container w3-padding-32" id="award">
     <h2>Awards</h2>
-    <p><li> 2020, <a href="https://mp.weixin.qq.com/s/dORL01lgFNDHgjp3KMJmiQ">Nomination for Outstanding Youth Paper Award</a>, <a href="https://worldaic.com.cn/portal/en/aboutus.html">WAIC</a>.</p>               
-    <p><li> 2017, <a href="https://research.google/outreach/phd-fellowship/recipients/?category=2017">Google PhD Fellowship</a>.</p>
-    <p><li> 2017, <a href="http://scholarship.baidu.com/">Baidu Scholarship.</a></p>
-    <p><li> 2017, President's PhD Scholarship, Peking University.</p>
-    <p><li> 2017, National Scholarship for Graduate Students.</p>
-    <p><li> 2016, National Scholarship for Graduate Students.</p>
+      <p><li> 2023, KDD'23 Student Travel Award. </p>
+    <p><li> 2023, Co-PI of <a href="https://sites.wustl.edu/bigideas/"> Big Ideas Grant.</a></p>
+    <p><li> 2022, our work on perioperative care ("EnhanCed HandOffs (ECHO)) has been awarded R01 funding.</p>
+    <p><li> 2015, Singapore and China's International Scholarship (SM2) for Undergraduate Students.</p>
+      <p><li> 2014, 1st Prize in Singapore <a href="https://news.microsoft.com/en-sg/2023/04/12/singapore-greentech-challenge-2023-powered-by-microsoft-imda-and-sgtech-to-accelerate-nationwide-innovation-for-a-resilient-and-sustainable-future/">GreenTECH Competition.</a></p>
+    <p><li> 2014, Singapore and China's International Scholarship (SM2) for Undergraduate Students.</p>
+    <p><li> 2013, Singapore and China's International Scholarship (SM2) for Undergraduate Students.</p>
+      <p><li> 2012, URECA Scholar, Nanyang Technological University.</p>
+    <p><li> 2012, Singapore and China's International Scholarship (SM2) for Undergraduate Students.</p>
+      <p><li> 2011, Singapore and China's International Scholarship (SM2) for Undergraduate Students.</p>
   </div>  
 
   <div class="w3-light-grey w3-center w3-padding-24">
 
-    Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>, just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a>.</br>
-     <a style="color:red">Note: If you use this template, please remove the following code or replace it with your own counter!</a>.</br>
+    Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>.</br>
 
-  <!-- Default Statcounter code for Bing Xue's Homepage
-  https://www.wangyunhe.site -->
-  No.
-  <script type="text/javascript">
-  var sc_project=12347113; 
-  var sc_invisible=0; 
-  var sc_security="21aca5d1"; 
-  var sc_https=1; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script> Visitor Since Feb 2023. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
-  <noscript>
-    <div class="statcounter"><a title="Web Analytics Made Easy -
-  StatCounter" href="https://statcounter.com/" target="_blank"><img
-  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
-  alt="Web Analytics Made Easy - StatCounter"></a></div>
-  </noscript>
-  <!-- End of Statcounter Code -->
+<!--  &lt;!&ndash; Default Statcounter code for Bing Xue's Homepage-->
+<!--  https://www.wangyunhe.site &ndash;&gt;-->
+<!--  No.-->
+<!--  <script type="text/javascript">-->
+<!--  var sc_project=12347113; -->
+<!--  var sc_invisible=0; -->
+<!--  var sc_security="21aca5d1"; -->
+<!--  var sc_https=1; -->
+<!--  var scJsHost = "https://";-->
+<!--  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+-->
+<!--  "statcounter.com/counter/counter.js'></"+"script>");-->
+<!--  </script> Visitor Since Feb 2023. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>-->
+<!--  <noscript>-->
+<!--    <div class="statcounter"><a title="Web Analytics Made Easy - -->
+<!--  StatCounter" href="https://statcounter.com/" target="_blank"><img-->
+<!--  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"-->
+<!--  alt="Web Analytics Made Easy - StatCounter"></a></div>-->
+<!--  </noscript>-->
+<!--  &lt;!&ndash; End of Statcounter Code &ndash;&gt;-->
 
   </div>
 
